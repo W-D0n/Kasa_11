@@ -1,0 +1,19 @@
+/* .Thumb */
+
+position: absolute;
+width: 91px;
+height: 15px;
+left: 57px;
+top: 159px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 142.6%;
+
+/* or 20px */
+display: flex;
+align-items: flex-end;
+
+color: #666666;
