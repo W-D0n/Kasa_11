@@ -1,4 +1,42 @@
-.active {
-  text-decoration: underline;
-  background-color: burlywood;
+.header {
+  color: var(--primary-color);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  width: 85vw;
+  margin-inline: auto;
+  justify-content: space-between;
+}
+
+.header_links {
+  margin-left: auto;
+}
+
+.header_links :first-child {
+  margin-right: 57px;
+}
+.header_nav-list {
+  display: flex;
+  flex-direction: row;
+  width: 12rem;
+  gap: 1rem;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    font-size: 12px;
+  }
+
+  .header_logo {
+    max-height: 40px;
+  }
+
+  .header_links :first-child {
+    margin-right: 10px;
+  }
+
+  .header_links {
+    text-transform: uppercase;
+  }
 }

@@ -9,8 +9,8 @@ const Header = ({ activeItem }) => {
 	return (
 		<header className="header">
 			<img src={kasaLogo} alt="Kaza logo" />
-			<nav className="header__nav">
-				<ul className="header__nav-list">
+			<nav className="header_nav">
+				<ul className="header_nav-list">
 					<li className={activeItem === 'Home' ? 'active' : ''}>
 						<Link to="/">Home</Link>
 					</li>

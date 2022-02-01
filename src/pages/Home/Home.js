@@ -1,17 +1,15 @@
-import Header from '../../components/layout/Header/Header';
-import Footer from '../../components/layout/Footer/Footer';
+import './Home.css'
+import Hero from '../../components/ui/Hero/Hero';
+import imgPath from '../../assets/img/covers/cover-home.png';
 
 const Home = () => {
   return (
     <>
-      <Header activeItem="Home" />
-      <main style={{ padding: "1rem 0" }}>
-        {/* ici le contenu */}
-        <h2>Houses</h2>
+      <Hero title="Chez vous, partout et ailleurs" coverImg={imgPath} />
+      <main className='gallery_container'>
       </main>
-      <Footer />
     </>
   );
 }
 
-export default Home
+export default Home;
