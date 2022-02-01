@@ -1,14 +1,14 @@
+// Header = Logo + link (Home+About) 
 import './Header.css';
 import { Link } from 'react-router-dom';
-import kasaLogo from '../../assets/img/logo.svg';
-// import { useState } from 'react';
+import kasaLogo from '../../../assets/img/logo.svg';
 
 const Header = ({ activeItem }) => {
 	// const [activeItem, setActiveItem] = useState("Home");
 
 	return (
 		<header className="header">
-			<img src={kasaLogo} alt="kaza logo" />
+			<img src={kasaLogo} alt="Kaza logo" />
 			<nav className="header__nav">
 				<ul className="header__nav-list">
 					<li className={activeItem === 'Home' ? 'active' : ''}>
