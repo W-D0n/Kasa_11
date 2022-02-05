@@ -1,0 +1,23 @@
+.gallery {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  margin-top: 60px;
+  border-radius: 25px;
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.gallery__arrow {
+}
+.gallery__arrow:hover {
+}
+.gallery__arrow-R {
+}
+.gallery__arrow-L {
+}
+.gallery__count {
+}

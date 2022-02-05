@@ -1,8 +1,13 @@
-import './DropDown.css';
-import arrowUp from '../../assets/img/arrow_up.svg';
+import './Dropdown.css';
+import { useState } from 'react';
 
-const Dropdown = () => {
-	return <div></div>;
+const Dropdown = ({title, content, type = null}) => {
+	const [isOpen, setIsOpen] = useState(false)
+	return (
+		<div className='dropdown'>
+			
+		</div>
+	);
 };
 
 export default Dropdown;

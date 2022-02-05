@@ -4,39 +4,34 @@
   display: flex;
   align-items: center;
   margin-top: 40px;
-  width: 85vw;
   margin-inline: auto;
   justify-content: space-between;
 }
 
-.header_links {
+.header__links {
   margin-left: auto;
 }
-
-.header_links :first-child {
-  margin-right: 57px;
+.active {
+  text-decoration: underline;
 }
-.header_nav-list {
+
+.header__nav-list {
   display: flex;
   flex-direction: row;
-  width: 12rem;
-  gap: 1rem;
-  justify-content: center;
+  width: 14rem;
+  justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
   .header {
     font-size: 12px;
   }
-
-  .header_logo {
+  .header__logo {
     max-height: 40px;
   }
-
-  .header_links :first-child {
+  .header__links :first-child {
     margin-right: 10px;
   }
-
-  .header_links {
+  .header__links {
     text-transform: uppercase;
   }
 }

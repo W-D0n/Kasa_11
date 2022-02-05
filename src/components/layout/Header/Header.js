@@ -1,21 +1,24 @@
 // Header = Logo + link (Home+About) 
 import './Header.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import kasaLogo from '../../../assets/img/logo.svg';
 
-const Header = ({ activeItem }) => {
+const Header = () => {
 	// const [activeItem, setActiveItem] = useState("Home");
+	const location = useLocation();
 
 	return (
 		<header className="header">
-			<img src={kasaLogo} alt="Kaza logo" />
-			<nav className="header_nav">
-				<ul className="header_nav-list">
-					<li className={activeItem === 'Home' ? 'active' : ''}>
-						<Link to="/">Home</Link>
+			<Link to="/">
+				<img src={kasaLogo} alt="Kaza logo" />
+			</Link>
+			<nav className="header__nav">
+				<ul className="header__nav-list">
+					<li className={location.pathname === '/' ? 'active' : ''}>
+						<Link to="/">Accueil</Link>
 					</li>
-					<li className={activeItem === 'About' ? 'active' : ''}>
-						<Link to="/about">About</Link>
+					<li className={location.pathname === '/about' ? 'active' : ''}>
+						<Link to="/about">A Propos</Link>
 					</li>
 				</ul>
 			</nav>

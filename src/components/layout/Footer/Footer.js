@@ -1,5 +1,5 @@
 import './Footer.css'
-import kasaLogo from '../../../assets/img/kasa_bw_logo.svg';
+import kasaLogo from '../../../assets/img/kasa_frame_logo.svg';
 
 const Footer = () => {
   return (
