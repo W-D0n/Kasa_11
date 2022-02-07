@@ -1,11 +1,16 @@
-@import-normalize;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
 
 :root {
   --primary-color: #ff6060;
   --secondary-color: #f6f6f6;
+  height: 100vh;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+.main {  
+	min-height: calc(100% - 209px);
+  max-width: 1240px;
+	margin-inline: auto;
 }
