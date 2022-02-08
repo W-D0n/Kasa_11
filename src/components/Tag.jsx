@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Tag.css';
+import '../styles/Accomodations.css';
 
 const Tag = ({ title }) => {
   return <li className="tag">{title}</li>

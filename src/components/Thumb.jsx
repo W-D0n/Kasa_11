@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Thumb.css';
+import '../styles/Home.css';
 
 const Thumb = ({ title, imgCover }) => {
   return (

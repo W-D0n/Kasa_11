@@ -12,14 +12,13 @@ const Accomodations = () => {
   useEffect(() => {
     FetchService.get('../logements.json')
       .then(accomodations => {
-        const accomodation = accomodations.find(item => item.id == params.id);
-        console.log(accomodation)
+        const accomodation = accomodations.find(item => item.id === params.id);
         setAccomodationInfo(accomodation);
       })
       .catch(error => {
         console.log(error)
       })
-  }, []);
+  }, [params.id]);
 
   return (
     <>

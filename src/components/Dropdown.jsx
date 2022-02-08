@@ -11,8 +11,8 @@ const Dropdown = ({ title, content, type = 'large' }) => {
 			onClick={() => {
 				setIsOpen(!isOpen)
 			}}>
-			<div className='dropdown__heading'>
-				<h3 className='dropdown__title'>{title}</h3>
+			<div className='dropdown__label'>
+				<h3>{title}</h3>
 				<img
 					className={isOpen ? 'arrow_down' : ''}
 					src={arrowUp}

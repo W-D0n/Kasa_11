@@ -3,14 +3,11 @@
   font-size: 24px;
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 3rem;
   margin-inline: auto;
   justify-content: space-between;
 }
 
-.header__links {
-  margin-left: auto;
-}
 .active {
   text-decoration: underline;
 }
@@ -18,7 +15,7 @@
 .header__nav-list {
   display: flex;
   flex-direction: row;
-  width: 14rem;
+  width: 16rem;
   justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
@@ -27,11 +24,5 @@
   }
   .header__logo {
     max-height: 40px;
-  }
-  .header__links :first-child {
-    margin-right: 10px;
-  }
-  .header__links {
-    text-transform: uppercase;
   }
 }
