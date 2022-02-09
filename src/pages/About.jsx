@@ -26,10 +26,10 @@ const About = () => {
     <>
       <div className='main'>
         <Header activeItem='About' />
-        <Hero coverImg={coverImg} />
+        <Hero coverImg={coverImg} type='large' />
         <section className='about__container'>
           {content.map((e) => (
-            <Dropdown key={e.title} title={e.title} content={e.text} />
+            <Dropdown key={e.title} title={e.title} content={e.text} type='large' />
           ))}
         </section>
       </div>

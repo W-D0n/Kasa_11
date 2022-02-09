@@ -8,15 +8,15 @@ const Header = () => {
 	return (
 		<header className="header">
 			<Link to="/">
-				<img src={kasaLogo} alt="Kaza logo" />
+				<img src={kasaLogo} alt="Kaza logo" className='header__logo' />
 			</Link>
 			<nav className="header__nav">
 				<ul className="header__nav-list">
 					<li className={location.pathname === '/' ? 'active' : ''}>
-						<Link to="/">Accueil</Link>
+						<Link to="/" className='header__nav-link'>Accueil</Link>
 					</li>
 					<li className={location.pathname === '/about' ? 'active' : ''}>
-						<Link to="/about">A Propos</Link>
+						<Link to="/about" className='header__nav-link'>A Propos</Link>
 					</li>
 				</ul>
 			</nav>

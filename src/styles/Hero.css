@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   position: relative;
   font-size: 48px;
   height: 223px;
@@ -12,18 +13,17 @@
   color: white;
 }
 
-.hero_text {
+.hero__title {
   z-index: 1;
 }
 
-.hero_img {
+.hero__img {
   position: absolute;
   z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  border-radius: 25px;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -32,16 +32,15 @@
 
 @media screen and (max-width: 767px) {
   .hero {
-    height: 111px;
     font-size: 20px;
     margin-top: 20px;
+    border-radius: 10px;
+    height: 110px;
   }
-
-  .hero_text {
-    padding: 15px;
-  }
-
-  .hero_img-darken {
+  .hero.large {
     height: 223px;
+  }
+  .hero__title {
+    padding: 15px;
   }
 }

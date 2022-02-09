@@ -1,10 +1,10 @@
 import '../styles/Hero.css';
 
-const Hero = ({ title = '', coverImg }) => {
+const Hero = ({ title = '', coverImg, type }) => {
   return (
-    <div className='hero'>
-      <p className='hero_title'>{title}</p>
-      <img src={coverImg} alt='Header landscape' className='hero_img' />
+    <div className={'hero ' + (type === 'large' ? 'large' : '')}>
+      <p className='hero__title'>{title}</p>
+      <img src={coverImg} alt='Header landscape' className='hero__img' />
     </div>
   );
 };

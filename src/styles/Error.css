@@ -9,7 +9,6 @@
   font-size: 288px;
   font-weight: bold;
 }
-
 .error__subText {
   font-size: 36px;
   margin-bottom: 120px;
@@ -21,13 +20,14 @@
 }
 
 @media screen and (max-width: 767px) {
-  .error__bigNum {
-    margin-top: 75px;
+  .error__text {
+    margin-top: 12rem;
     font-size: 96px;
   }
 
-  .error__text {
+  .error__subText {
     font-size: 18px;
+    text-align: center;
   }
 
   .error__link {

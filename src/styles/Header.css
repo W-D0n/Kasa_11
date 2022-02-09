@@ -1,28 +1,38 @@
 .header {
   color: var(--primary-color);
-  font-size: 24px;
   display: flex;
   align-items: center;
   margin-top: 3rem;
   margin-inline: auto;
   justify-content: space-between;
 }
-
+.header__nav-link {
+  font-size: 24px;
+}
 .active {
   text-decoration: underline;
 }
 
 .header__nav-list {
   display: flex;
-  flex-direction: row;
-  width: 16rem;
-  justify-content: space-between;
+  gap: 4rem;
 }
 @media screen and (max-width: 767px) {
   .header {
+    margin-top: 1.25rem;
     font-size: 12px;
   }
   .header__logo {
     max-height: 40px;
+    max-width: fit-content;
+  }
+  .header__nav {
+    align-self: end;
+  }
+  .header__nav-list {
+    gap: 1rem;
+  }
+  .header__nav-link {
+    font-size: 17px;
   }
 }
