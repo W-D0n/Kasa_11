@@ -1,15 +1,12 @@
 import React from 'react';
 import '../styles/Accomodations.css';
-import { Rating, Tag, Dropdown, Host, InfoHeading } from '../components';
+import { Rating, Tag, Dropdown } from '../components';
 
 const Info = ({ title, description, host, rating, location, equipments, tags }) => {
-  // const Info = (props) => {
 
   return (
     <section className='info__container'>
       <div className='info__heading'>
-        {/* <InfoHeading title={props.title} location={props.location} tags={props.tags} />
-          <Host host={props.host} rate={props.rating} /> */}
         <header className='info__header'>
           <h1 className='info__title'>{title}</h1>
           <span className='info__location'>{location}</span>
