@@ -21,11 +21,15 @@ const Gallery = ({ pictures }) => {
   return (
     <div className='gallery' >
       <img src={img} alt='accomodation' className='gallery__img' />
-      <button type='button' className='gallery__arrow left' onClick={() => handleClick(-1)}></button>
-      <button type='button' className='gallery__arrow right' onClick={() => handleClick(1)}></button>
-      <span className='gallery__count'>
-        {imgIndex + 1}/{pictures.length}
-      </span>
+      {pictures.length > 1 && (
+        <div>
+          <button type='button' className='gallery__arrow left' onClick={() => handleClick(-1)}></button>
+          <button type='button' className='gallery__arrow right' onClick={() => handleClick(1)}></button>
+          <span className='gallery__count'>
+            {imgIndex + 1}/{pictures.length}
+          </span>
+        </div>
+      )}
     </div>)
 };
 
