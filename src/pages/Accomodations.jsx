@@ -21,7 +21,7 @@ const Accomodations = () => {
       .catch(error => {
         console.log(error)
       })
-  }, []);
+  }, [id, navigate]);
   return (
     <>
       <div className='main'>

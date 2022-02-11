@@ -1,6 +1,6 @@
 import '../styles/About.css'
 import coverImg from '../assets/img/covers/cover-about.png';
-import { Header, Footer, Hero, Dropdown } from '../components';
+import { Footer, Hero, Dropdown } from '../components';
 
 const About = () => {
   const content = [
