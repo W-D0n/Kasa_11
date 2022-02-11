@@ -6,7 +6,6 @@ const Rating = ({ rate }) => {
   for (let i = 1; i <= 5; i++) {
     arr.push(i <= parseInt(rate) ? 'filled' : 'empty');
   }
-  console.log(arr)
   return (
     <div className='rate'>
       <ul>

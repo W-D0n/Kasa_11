@@ -1,35 +1,35 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../styles/Accomodations.css';
 import FetchService from '../utils/FetchService';
-import { Header, Footer, Gallery, Info } from '../components';
+import { Footer, Gallery, Info } from '../components';
 
 
 const Accomodations = () => {
-  const [accomodationInfo, setAccomodationInfo] = useState(null);
-  let params = useParams();
-
+  const [accomodationInfo, setAccomodationInfo] = useState();
+  let { id } = useParams();
+  const navigate = useNavigate();
   useEffect(() => {
     FetchService.get('../logements.json')
       .then(accomodations => {
-        const accomodation = accomodations.find(item => item.id === params.id);
+        const accomodation = accomodations.find(item => item.id === id);
         setAccomodationInfo(accomodation);
+        if (!accomodation) {
+          navigate('/error');
+        }
       })
       .catch(error => {
         console.log(error)
       })
-  }, [params.id]);
-
+  }, []);
   return (
     <>
       <div className='main'>
-        <Header />
         {accomodationInfo && (
           <section className="accomodation">
             <Gallery pictures={accomodationInfo.pictures} />
             <Info {...accomodationInfo} />
-          </section>
-        )}
+          </section>)}
       </div>
       <Footer />
     </>

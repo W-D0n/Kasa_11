@@ -59,6 +59,7 @@
   .dropdown__label {
     max-height: 30px;
     padding: 0.5rem 0.9rem;
+    align-items: center;
   }
   .dropdown__label h3 {
     font-size: 13px;

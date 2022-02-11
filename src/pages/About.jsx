@@ -25,7 +25,6 @@ const About = () => {
   return (
     <>
       <div className='main'>
-        <Header activeItem='About' />
         <Hero coverImg={coverImg} type='large' />
         <section className='about__container'>
           {content.map((e) => (

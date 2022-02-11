@@ -7,5 +7,6 @@ export { default as Info } from './Info';
 export { default as Rating } from './Rating';
 export { default as Tag } from './Tag';
 export { default as Thumb } from './Thumb';
-export { default as Host } from './Thumb';
-export { default as InfoHeading } from './Thumb';
+
+export { default as Host } from './Host';
+export { default as InfoHeading } from './InfoHeading';

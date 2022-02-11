@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Accomodations.css';
-import Tag from '../components'
+import Tag from './Tag'
 
 const InfoHeading = ({ title, location, tags }) => {
   return (
